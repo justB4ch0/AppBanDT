@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFFF">
+
+    <ImageView
+        android:id="@+id/imgSach"
+        android:layout_width="170dp"
+        android:layout_height="240dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvTenSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/imgSach"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvTacGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTenSach"
+        android:layout_toRightOf="@id/imgSach" />
+
+    <TextView
+        android:id="@+id/tvMota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTacGia"
+        android:layout_toRightOf="@id/imgSach" />
+
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMota"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@id/imgSach"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSach"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMua"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#99FFFF"
+            android:text="Đặt mua" />
+
+        <Button
+            android:id="@+id/btnThemGio"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#99FFFF"
+            android:text="Thêm vào giỏ hàng" />
+    </LinearLayout>
+</RelativeLayout>
